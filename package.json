@@ -1,0 +1,27 @@
+{
+    "private": true,
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "_comment1": "We fix the sass version to 1.72.0 because the latest one issues some deprecation warning compiling bootstrap 5.3.3",
+    "_comment2": "This is a temporary solution until the issue is fixed in bootstrap",
+    "devDependencies": {
+        "@vitejs/plugin-vue": "^5.0.4",
+        "axios": "^1.6.4",
+        "laravel-vite-plugin": "^1.0",
+        "sass": "1.72.0",
+        "vite": "^5.0"
+    },
+    "dependencies": {
+        "@fortawesome/fontawesome-free": "^6.5.1",
+        "@popperjs/core": "^2.11.8",
+        "bootstrap": "5.3.3",
+        "pinia": "^2.1.7",
+        "simplebar": "^6.2.5",
+        "sweetalert2": "^11.12.4",
+        "vue": "^3.2.31",
+        "vue-router": "^4.3.0"
+    }
+}

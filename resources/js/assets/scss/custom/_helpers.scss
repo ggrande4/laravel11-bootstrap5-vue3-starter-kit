@@ -1,0 +1,173 @@
+@include text-emphasis-variant(".text-primary-1", tint-color($primary, 80%));
+@include text-emphasis-variant(".text-primary-2", tint-color($primary, 60%));
+@include text-emphasis-variant(".text-primary-3", tint-color($primary, 40%));
+@include text-emphasis-variant(".text-primary-4", tint-color($primary, 20%));
+@include text-emphasis-variant(".text-primary-5", $primary);
+@include text-emphasis-variant(".text-primary-6", shade-color($primary, 20%));
+@include text-emphasis-variant(".text-primary-7", shade-color($primary, 40%));
+@include text-emphasis-variant(".text-primary-8", shade-color($primary, 60%));
+@include text-emphasis-variant(".text-primary-9", shade-color($primary, 80%));
+
+@include text-emphasis-variant(".text-secondary-1", tint-color($secondary, 80%));
+@include text-emphasis-variant(".text-secondary-2", tint-color($secondary, 60%));
+@include text-emphasis-variant(".text-secondary-3", tint-color($secondary, 40%));
+@include text-emphasis-variant(".text-secondary-4", tint-color($secondary, 20%));
+@include text-emphasis-variant(".text-secondary-5", $secondary);
+@include text-emphasis-variant(".text-secondary-6", shade-color($secondary, 20%));
+@include text-emphasis-variant(".text-secondary-7", shade-color($secondary, 40%));
+@include text-emphasis-variant(".text-secondary-8", shade-color($secondary, 60%));
+@include text-emphasis-variant(".text-secondary-9", shade-color($secondary, 80%));
+
+@include text-emphasis-variant(".text-info-1", tint-color($info, 80%));
+@include text-emphasis-variant(".text-info-2", tint-color($info, 60%));
+@include text-emphasis-variant(".text-info-3", tint-color($info, 40%));
+@include text-emphasis-variant(".text-info-4", tint-color($info, 20%));
+@include text-emphasis-variant(".text-info-5", $info);
+@include text-emphasis-variant(".text-info-6", shade-color($info, 20%));
+@include text-emphasis-variant(".text-info-7", shade-color($info, 40%));
+@include text-emphasis-variant(".text-info-8", shade-color($info, 60%));
+@include text-emphasis-variant(".text-info-9", shade-color($info, 80%));
+
+@include text-emphasis-variant(".text-success-1", tint-color($success, 80%));
+@include text-emphasis-variant(".text-success-2", tint-color($success, 60%));
+@include text-emphasis-variant(".text-success-3", tint-color($success, 40%));
+@include text-emphasis-variant(".text-success-4", tint-color($success, 20%));
+@include text-emphasis-variant(".text-success-5", $success);
+@include text-emphasis-variant(".text-success-6", shade-color($success, 20%));
+@include text-emphasis-variant(".text-success-7", shade-color($success, 40%));
+@include text-emphasis-variant(".text-success-8", shade-color($success, 60%));
+@include text-emphasis-variant(".text-success-9", shade-color($success, 80%));
+
+@include text-emphasis-variant(".text-warning-1", tint-color($warning, 80%));
+@include text-emphasis-variant(".text-warning-2", tint-color($warning, 60%));
+@include text-emphasis-variant(".text-warning-3", tint-color($warning, 40%));
+@include text-emphasis-variant(".text-warning-4", tint-color($warning, 20%));
+@include text-emphasis-variant(".text-warning-5", $warning);
+@include text-emphasis-variant(".text-warning-6", shade-color($warning, 20%));
+@include text-emphasis-variant(".text-warning-7", shade-color($warning, 40%));
+@include text-emphasis-variant(".text-warning-8", shade-color($warning, 60%));
+@include text-emphasis-variant(".text-warning-9", shade-color($warning, 80%));
+
+@include text-emphasis-variant(".text-danger-1", tint-color($danger, 80%));
+@include text-emphasis-variant(".text-danger-2", tint-color($danger, 60%));
+@include text-emphasis-variant(".text-danger-3", tint-color($danger, 40%));
+@include text-emphasis-variant(".text-danger-4", tint-color($danger, 20%));
+@include text-emphasis-variant(".text-danger-5", $danger);
+@include text-emphasis-variant(".text-danger-6", shade-color($danger, 20%));
+@include text-emphasis-variant(".text-danger-7", shade-color($danger, 40%));
+@include text-emphasis-variant(".text-danger-8", shade-color($danger, 60%));
+@include text-emphasis-variant(".text-danger-9", shade-color($danger, 80%));
+
+.bg-image {
+    background-position: 0% 50%;
+    background-size: cover;
+
+    &-top {
+        background-position-y: 0%;
+    }
+    &-center {
+        background-position-x: 50%;
+    }
+    &-bottom {
+        background-position-y: 100%;
+    }
+}
+
+@include bg-variant(".bg-primary-op", rgba($primary, 0.75));
+@include bg-variant(".bg-primary", $primary);
+@include bg-variant(".bg-primary-dark", $primary-dark);
+@include bg-variant(".bg-primary-dark-op", rgba($primary-dark, 0.8));
+@include bg-variant(".bg-primary-darker", $primary-darker);
+@include bg-variant(".bg-primary-light", $primary-light);
+@include bg-variant(".bg-primary-lighter", $primary-lighter);
+
+@include bg-variant(".bg-success", $success);
+@include bg-variant(".bg-success-light", $success-light);
+@include bg-variant(".bg-warning", $warning);
+@include bg-variant(".bg-warning-light", $warning-light);
+@include bg-variant(".bg-info", $info);
+@include bg-variant(".bg-info-light", $info-light);
+@include bg-variant(".bg-danger", $danger);
+@include bg-variant(".bg-danger-light", $danger-light);
+
+@include bg-variant(".bg-success-op", rgba($success-light, 0.95));
+@include bg-variant(".bg-warning-op", rgba($warning-light, 0.95));
+@include bg-variant(".bg-info-op", rgba($info-light, 0.95));
+@include bg-variant(".bg-danger-op ", rgba($danger-light, 0.95));
+
+@include bg-variant(".bg-body", $light);
+@include bg-variant(".bg-body-light", $body-bg-light);
+@include bg-variant(".bg-body-dark", $body-bg-dark);
+@include bg-variant(".bg-body-extra-light", $white);
+@include bg-variant(".bg-muted", $gray-600);
+
+@include bg-variant(".bg-white", $white);
+@include bg-variant(".bg-black", $black);
+
+@include bg-variant(".bg-gray", $gray-400);
+@include bg-variant(".bg-gray-dark", $gray-600);
+@include bg-variant(".bg-gray-darker", $gray-800);
+@include bg-variant(".bg-gray-light", $gray-200);
+@include bg-variant(".bg-gray-lighter", $gray-100);
+
+
+@include bg-variant(".bg-primary-op-10", rgba($primary, 0.1));
+@include bg-variant(".bg-primary-op-20", rgba($primary, 0.2));
+@include bg-variant(".bg-primary-op-30", rgba($primary, 0.3));
+@include bg-variant(".bg-primary-op-40", rgba($primary, 0.4));
+@include bg-variant(".bg-primary-op-50", rgba($primary, 0.5));
+@include bg-variant(".bg-primary-op-60", rgba($primary, 0.6));
+@include bg-variant(".bg-primary-op-70", rgba($primary, 0.7));
+@include bg-variant(".bg-primary-op-80", rgba($primary, 0.8));
+@include bg-variant(".bg-primary-op-90", rgba($primary, 0.9));
+
+@include bg-variant(".bg-secondary-op-10", rgba($secondary, 0.1));
+@include bg-variant(".bg-secondary-op-20", rgba($secondary, 0.2));
+@include bg-variant(".bg-secondary-op-30", rgba($secondary, 0.3));
+@include bg-variant(".bg-secondary-op-40", rgba($secondary, 0.4));
+@include bg-variant(".bg-secondary-op-50", rgba($secondary, 0.5));
+@include bg-variant(".bg-secondary-op-60", rgba($secondary, 0.6));
+@include bg-variant(".bg-secondary-op-70", rgba($secondary, 0.7));
+@include bg-variant(".bg-secondary-op-80", rgba($secondary, 0.8));
+@include bg-variant(".bg-secondary-op-90", rgba($secondary, 0.9));
+
+@include bg-variant(".bg-info-op-10", rgba($info, 0.1));
+@include bg-variant(".bg-info-op-20", rgba($info, 0.2));
+@include bg-variant(".bg-info-op-30", rgba($info, 0.3));
+@include bg-variant(".bg-info-op-40", rgba($info, 0.4));
+@include bg-variant(".bg-info-op-50", rgba($info, 0.5));
+@include bg-variant(".bg-info-op-60", rgba($info, 0.6));
+@include bg-variant(".bg-info-op-70", rgba($info, 0.7));
+@include bg-variant(".bg-info-op-80", rgba($info, 0.8));
+@include bg-variant(".bg-info-op-90", rgba($info, 0.9));
+
+@include bg-variant(".bg-success-op-10", rgba($success, 0.1));
+@include bg-variant(".bg-success-op-20", rgba($success, 0.2));
+@include bg-variant(".bg-success-op-30", rgba($success, 0.3));
+@include bg-variant(".bg-success-op-40", rgba($success, 0.4));
+@include bg-variant(".bg-success-op-50", rgba($success, 0.5));
+@include bg-variant(".bg-success-op-60", rgba($success, 0.6));
+@include bg-variant(".bg-success-op-70", rgba($success, 0.7));
+@include bg-variant(".bg-success-op-80", rgba($success, 0.8));
+@include bg-variant(".bg-success-op-90", rgba($success, 0.9));
+
+@include bg-variant(".bg-warning-op-10", rgba($warning, 0.1));
+@include bg-variant(".bg-warning-op-20", rgba($warning, 0.2));
+@include bg-variant(".bg-warning-op-30", rgba($warning, 0.3));
+@include bg-variant(".bg-warning-op-40", rgba($warning, 0.4));
+@include bg-variant(".bg-warning-op-50", rgba($warning, 0.5));
+@include bg-variant(".bg-warning-op-60", rgba($warning, 0.6));
+@include bg-variant(".bg-warning-op-70", rgba($warning, 0.7));
+@include bg-variant(".bg-warning-op-80", rgba($warning, 0.8));
+@include bg-variant(".bg-warning-op-90", rgba($warning, 0.9));
+
+@include bg-variant(".bg-danger-op-10", rgba($danger, 0.1));
+@include bg-variant(".bg-danger-op-20", rgba($danger, 0.2));
+@include bg-variant(".bg-danger-op-30", rgba($danger, 0.3));
+@include bg-variant(".bg-danger-op-40", rgba($danger, 0.4));
+@include bg-variant(".bg-danger-op-50", rgba($danger, 0.5));
+@include bg-variant(".bg-danger-op-60", rgba($danger, 0.6));
+@include bg-variant(".bg-danger-op-70", rgba($danger, 0.7));
+@include bg-variant(".bg-danger-op-80", rgba($danger, 0.8));
+@include bg-variant(".bg-danger-op-90", rgba($danger, 0.9));
+

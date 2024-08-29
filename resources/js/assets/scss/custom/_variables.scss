@@ -1,0 +1,188 @@
+//***********************************
+// Bootstrap variables overrides
+//***********************************
+
+$white: #fff !default;
+$gray-100: #f8f9fa !default;
+$gray-200: #e9ecef !default;
+$gray-300: #dee2e6 !default;
+$gray-400: #ced4da !default;
+$gray-500: #adb5bd !default;
+$gray-600: #6c757d !default;
+$gray-700: #495057 !default;
+$gray-800: #343a40 !default;
+$gray-900: #212529 !default;
+$black: #000 !default;
+
+$primary: #2546d6 !default;
+$secondary: #505070 !default;
+$success: #129955 !default;
+$info: #1290ba !default;
+$warning: #ee550c !default;
+$danger: #d81e50 !default;
+$light: #ebeef2 !default;
+$dark: #334155 !default;
+
+$primary-dark:              shade-color($primary, 30%);
+
+$primary-1: tint-color($primary, 80%) !default;
+$primary-2: tint-color($primary, 60%) !default;
+$primary-3: tint-color($primary, 40%) !default;
+$primary-4: tint-color($primary, 20%) !default;
+$primary-5: $primary !default;
+$primary-6: shade-color($primary, 20%) !default;
+$primary-7: shade-color($primary, 40%) !default;
+$primary-8: shade-color($primary, 60%) !default;
+$primary-9: shade-color($primary, 80%) !default;
+
+$secondary-1: tint-color($secondary, 80%) !default;
+$secondary-2: tint-color($secondary, 60%) !default;
+$secondary-3: tint-color($secondary, 40%) !default;
+$secondary-4: tint-color($secondary, 20%) !default;
+$secondary-5: $secondary !default;
+$secondary-6: shade-color($secondary, 20%) !default;
+$secondary-7: shade-color($secondary, 40%) !default;
+$secondary-8: shade-color($secondary, 60%) !default;
+$secondary-9: shade-color($secondary, 80%) !default;
+
+$tertiary: $primary-6 !default;
+
+$info-1: tint-color($info, 80%) !default;
+$info-2: tint-color($info, 60%) !default;
+$info-3: tint-color($info, 40%) !default;
+$info-4: tint-color($info, 20%) !default;
+$info-5: $info !default;
+$info-6: shade-color($info, 20%) !default;
+$info-7: shade-color($info, 40%) !default;
+$info-8: shade-color($info, 60%) !default;
+$info-9: shade-color($info, 80%) !default;
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "tertiary": $tertiary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+    "primary-1": $primary-1,
+    "primary-2": $primary-2,
+    "primary-3": $primary-3,
+    "primary-4": $primary-4,
+    "primary-6": $primary-6,
+    "primary-7": $primary-7,
+    "primary-8": $primary-8,
+    "primary-9": $primary-9,
+    "secondary-1": $secondary-1,
+    "secondary-2": $secondary-2,
+    "secondary-3": $secondary-3,
+    "secondary-4": $secondary-4,
+    "secondary-6": $secondary-6,
+    "secondary-7": $secondary-7,
+    "secondary-8": $secondary-8,
+    "secondary-9": $secondary-9,
+    "info-1": $info-1,
+    "info-2": $info-2,
+    "info-3": $info-3,
+    "info-4": $info-4,
+    "info-6": $info-6,
+    "info-7": $info-7,
+    "info-8": $info-8,
+    "info-9": $info-9
+) !default;
+
+$spacer: 1rem !default;
+
+$link-color: $primary !default;
+$link-decoration: none !default;
+$link-hover-color: darken($link-color, 20%) !default;
+$link-hover-decoration: none !default;
+
+$paragraph-margin-bottom: 1.875rem !default;
+
+$border-color: darken($light, 5%) !default;
+
+$font-size-root: 16px !default;
+$font-size-base: 1rem !default;
+$font-size-xs: $font-size-base * 0.75 !default;
+$font-size-sm: $font-size-base * 0.875 !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+
+$font-weight-medium: 500 !default;
+$font-weight-semibold: 600 !default;
+
+$h1-font-size: $font-size-base * 2.25 !default;
+$h2-font-size: $font-size-base * 1.875 !default;
+$h3-font-size: $font-size-base * 1.5 !default;
+$h4-font-size: $font-size-base * 1.25 !default;
+$h5-font-size: $font-size-base * 1.125 !default;
+$h6-font-size: $font-size-base !default;
+
+$headings-margin-bottom: ($spacer * 1.375) !default;
+$headings-font-family: null !default;
+$headings-font-weight: 600 !default;
+$headings-line-height: 1.25 !default;
+
+$text-muted: $gray-600 !default;
+
+$hr-opacity: 0.1 !default;
+
+$input-btn-font-size-lg: $font-size-base !default;
+
+$btn-font-weight: $font-weight-semibold !default;
+
+$btn-hover-bg-shade-amount: 20% !default;
+$btn-hover-bg-tint-amount: 20% !default;
+$btn-hover-border-shade-amount: 25% !default;
+$btn-hover-border-tint-amount: 15% !default;
+
+$form-text-margin-top: 0.375rem !default;
+
+$form-label-margin-bottom: 0.375rem !default;
+$form-label-font-weight: $font-weight-medium !default;
+
+$form-feedback-font-size: $font-size-sm !default;
+
+$form-check-input-border: 1px solid darken($light, 10%) !default;
+
+$form-switch-color: darken($light, 10%) !default;
+$form-switch-width: 2.5em !default;
+
+$modal-content-border-width: 0 !default;
+$modal-content-box-shadow-xs: none !default;
+$modal-content-box-shadow-sm-up: none !default;
+
+$modal-backdrop-opacity: 0.5 !default;
+$modal-header-border-color: $border-color !default;
+$modal-footer-border-color: $border-color !default;
+
+$breadcrumb-margin-bottom: 0 !default;
+
+//end bootstrap override
+
+$primary-light: tint-color($primary, 35%) !default;
+$primary-lighter: tint-color($primary, 80%) !default;
+$primary-dark: #4b5563 !default;
+$primary-darker: #1f2937 !default;
+$success-light: tint-color($success, 80%) !default;
+$info-light: tint-color($info, 80%) !default;
+$warning-light: tint-color($warning, 80%) !default;
+$danger-light: tint-color($danger, 80%) !default;
+
+$body-bg-dark: darken($light, 4.5%) !default;
+$body-bg-light: lighten($light, 3.5%) !default;
+
+$paragraph-line-height: 1.6 !default;
+$paragraph-line-height-lg: 1.8 !default;
+
+$header-height: 4rem !default;
+$header-bg: rgba($white, 0.95) !default;
+$header-dark-bg: rgba($primary-darker, 1) !default;
+
+$sidebar-bg: $white !default;
+$sidebar-dark-bg: $primary-darker !default;
+$sidebar-width: 250px !default;
+
+$fa-font-path: "@fortawesome/fontawesome-free/webfonts" !default;
