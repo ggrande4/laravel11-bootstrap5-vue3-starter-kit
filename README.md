@@ -18,6 +18,14 @@ This is a starter kit for Laravel 11, pre-configured with Bootstrap 5 for respon
 - **Routing and State Management**: Vue Router for seamless page transitions and Pinia for efficient and scalable state management.
 - **Environment**: Ready for local development with Vite for asset compilation.
 
+## Screenshots
+
+Here is a preview of the application:
+
+![Landing Page](screenshots/landing.png)
+
+For more screenshots, please visit the [`screenshots`](screenshots) directory in this repository.
+
 ## Getting Started
 
 ### Prerequisites
