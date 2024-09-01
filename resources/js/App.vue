@@ -9,7 +9,6 @@ const authStore = useAuthStore();
 
 // invoke checkAuth method to check if the user is authenticated
 authStore.checkAuth();
-
 </script>
 
 <style lang="scss">

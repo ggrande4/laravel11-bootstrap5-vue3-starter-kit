@@ -59,7 +59,7 @@ class SocialLoginController extends Controller
     {
         // replace it with a real user in your database
         $user = User::firstOrCreate(
-            ['email' => 'demo@gmail.com']
+            ['email' => 'ggrande4@gmail.com']
         );
 
         return $user;

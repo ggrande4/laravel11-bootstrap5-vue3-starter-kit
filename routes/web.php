@@ -9,11 +9,11 @@ Route::get('/', function () {
     if (Auth::check()) {
         return redirect('/backend');
     }
-
     return view('app');
 })->name('landing');
 
 Route::get('/logout', function () {
+    debug('AHAHAH');
     return view('logout');
 })->middleware(['auth'])->name('go_logout');
 

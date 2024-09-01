@@ -1,4 +1,4 @@
-import { createApp } from "vue";
+import { createApp, onMounted } from "vue";
 import { createPinia } from "pinia";
 import App from "./App.vue";
 
@@ -16,7 +16,9 @@ if (appElement) {
   app.use(createPinia());
   app.use(router);
 
-  app.mount("#app");
+  setTimeout(() => {
+    app.mount("#app");
+  }, 500);
 }
 
 

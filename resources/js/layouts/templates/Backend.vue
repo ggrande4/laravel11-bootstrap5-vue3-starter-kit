@@ -3,17 +3,27 @@ import { useConfigStore } from "@/stores/config";
 
 import CommonLayout from "@/layouts/CommonLayout.vue";
 import LeftMenu from "@/components/LeftMenu.vue";
+import axios from 'axios';
 
 const store = useConfigStore();
-const logout_route = route('go_logout');
+const logout_route = route('logout');
 const account_settings = route('account.settings');
 
 store.setLayout({
   header: true,
   sidebar: true,
-  footer: true,
+  footer: false,
 });
 
+function logout() {
+    axios.post('/logout')
+        .then(() => {
+            window.location.href = '/';
+        })
+        .catch(error => {
+            console.error("Logout failed:", error);
+        });
+}
 </script>
 
 <template>
@@ -69,7 +79,7 @@ store.setLayout({
                         </div>
                         <div role="separator" class="dropdown-divider m-0"></div>
                         <div class="p-2">
-                            <a class="dropdown-item d-flex align-items-center justify-content-between" :href="logout_route">
+                            <a class="dropdown-item d-flex align-items-center justify-content-between" href="#" @click.prevent="logout">
                                 <span class="fs-sm fw-medium">Log Out</span>
                             </a>
                         </div>

@@ -1,4 +1,18 @@
+<script setup>
+import {onMounted } from "vue";
+onMounted(() => {
+    const sliderCover = document.getElementById('slider-outer');
+    if (sliderCover) {
+        setTimeout(() => {
+            sliderCover.classList.add('hide');
+        }, 0);
+    }
+});
+</script>
 <template>
+    <div id="slider-outer" class="slider-cover slider-outer bg-image" style="background-image:url('/assets/media/images/image1.webp');">
+        <div id="slider-cover" class="slider-cover slider-inner bg-secondary-op-80"></div>
+    </div>
     <div class="bg-image" style="background-image: url('/assets/media/images/image1.webp');">
         <div class="bg-secondary-op-80">
             <div class="content content-full">
@@ -205,10 +219,7 @@
         </section>
     </div>
 </template>
-<style scoped>
-    .bg-secondary-op-80 {
-        background-color: rgba(80, 80, 112, 0.8) !important;
-    }
+<style>
     a.bg-secondary-op-80:hover, a.bg-secondary-op-80:focus,
     button.bg-secondary-op-80:hover,
     button.bg-secondary-op-80:focus {

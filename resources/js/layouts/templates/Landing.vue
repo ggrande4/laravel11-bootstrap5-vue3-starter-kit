@@ -17,7 +17,7 @@ store.setLayout({
   footer: true,
 });
 </script>
-<style lang="scss" scoped>
+<style lang="scss">
     a.nav-link {
         padding-bottom: 0;
         padding-left: 0 !important;
