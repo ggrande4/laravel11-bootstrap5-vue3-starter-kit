@@ -13,7 +13,6 @@ Route::get('/', function () {
 })->name('landing');
 
 Route::get('/logout', function () {
-    debug('AHAHAH');
     return view('logout');
 })->middleware(['auth'])->name('go_logout');
 
