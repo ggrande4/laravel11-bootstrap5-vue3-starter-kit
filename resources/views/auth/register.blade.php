@@ -1,7 +1,7 @@
 <x-auth-layout>
     <div class="bg-image" style="background-image: url({{ asset('assets/media/images/image2.webp') }});">
         <div class="row g-0 justify-content-center bg-primary-dark-op mvh-100">
-            <div class="col-md-3 mt-5">
+            <div class="col-md-7 col-lg-5 col-xl-4 col-xxl-3 mt-5">
                 <div class="card">
                     <div class="card-header text-left text-primary">
                         <svg version="1.0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" height="2em" width="2em" class="logo-image" fill="currentColor">

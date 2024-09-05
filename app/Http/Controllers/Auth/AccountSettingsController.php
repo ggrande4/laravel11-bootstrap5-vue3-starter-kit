@@ -23,7 +23,7 @@ class AccountSettingsController extends Controller
         $user = Auth::user();
         $user->two_factor_secret = $google2fa->generateSecretKey();
 
-        // Generazione dei codici di recupero
+        // recovery codes
         $recoveryCodes = collect(range(1, 10))->map(function () {
             return Str::random(10) . '-' . Str::random(10);
         })->toArray();
