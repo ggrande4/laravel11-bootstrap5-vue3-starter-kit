@@ -17,9 +17,10 @@ const classContainer = computed(() => {
     return {
         "sidebar-o": authStore.isAuthenticated,
         "sidebar-dark":true,
-        "page-header-fixed":false,
+        "page-header-fixed":true,
     };
 });
+
 </script>
 
 <template>
